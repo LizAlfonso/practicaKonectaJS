@@ -1,0 +1,153 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: rgba(175, 175, 175, 0.3);
+}
+
+.logo
+{
+    width: 200px;
+    margin-left: 10%;  
+}
+
+li a
+{
+    text-decoration: none;  /*quitar underline*/
+    font-weight: bold;
+    color: rgb(137,174,71);
+    padding: 30px;  /*espaciar los elementos con un borde*/
+}
+
+ul
+{
+    list-style: none; /*quitar puntos de la lista*/
+}
+
+li a:hover
+{
+    border-bottom: 2px solid rgb(137,174,71);
+}
+
+.flexNav
+{
+    display: flex;
+    margin-bottom: 1.5rem;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;   /*centra los elementos perpendicularmente al eje ppal*/
+    margin-right: 10%;
+    flex:1 1 0;
+}
+
+.contenido  
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  /*centra el contenido*/
+    width: 75%;
+    align-items: center;
+    flex: 1 1 0; /*bajar el footer*/
+}
+
+/*.contenido2
+{
+    margin: 0 auto;
+    width: 75%;
+    flex: 1 1 0;
+}*/
+
+.formulario
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;                             
+    box-shadow: 5px 5px 5px rgb(155, 151, 151);
+}
+
+.columnas
+{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.columna
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;  /*ponerle scroll al textarea si se hace más ancha*/
+
+    /*border: 2px solid blue;*/
+}
+
+.columna div
+{
+    display: inline;
+    color: red;
+}
+
+div label, div input, select
+{
+    padding: 5px;
+}
+
+select option            /*placeholder del select en gris y el resto negro*/
+{
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] 
+{
+  color: #999999;
+}
+
+.footer
+{
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+#parrafo
+{
+    font-size: 27px;
+}
+
+.formulario2
+{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;                             
+    box-shadow: 5px 5px 5px rgb(155, 151, 151);
+}
+
+span
+{
+    padding: 0.3rem;
+    color: rgb(197, 16, 16);
+}

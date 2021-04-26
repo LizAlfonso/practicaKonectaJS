@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formulario.js"></script>
+    <title>Inicio</title>
+      
+  </head>
+
+  <body>
+  
+    <nav class="flexNav">
+        <img src="masterClass.jpg" class="logo">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido jsFormulario">
+        <form class="formulario" novalidate>
+
+            <div class="columnas">
+              <div class="columna">
+                <label for="identificacion">Número de Identificación <div>*</div></label>
+                <input type="text" name="identificacion" id="identificacion" class="jsEntrada" required placeholder="Número de Identificación">
+                <span id="identificacionMensaje"></span>
+                <label for="celular">Celular (10 dígitos sin espacios) <div>*</div></label>
+                <input type="text" name="celular" id="celular" class="jsEntrada" required placeholder="Celular">
+                <span id="celularMensaje"></span>
+                <label for="area">Área/Operación <div>*</div></label>
+                <input type="text" name="area" class="jsEntrada" required placeholder="Área/Operación">
+                <span id="areaMensaje"></span>
+                <label for="lugar">Si necesitamos contactarte telefónicamente, indícanos dónde te encuentras? <div>*</div></label>
+    
+                <select name="lugar" id="lugar" required>
+                  <option value="" hidden>Si necesitamos contactarte telefónicamente, indícanos dónde te encuentras?</option>
+                  <option value="bogota">Bogotá</option>
+                  <option value="cartagena">Cartagena</option>
+                  <option value="medellin">Medellín</option>
+                  <option value="santander">Santander</option>
+                </select>
+                <span id="lugarMensaje"></span>
+              </div>
+      
+              <div class="columna">
+                <label for="nombre">Nombres y Apellidos <div>*</div></label>
+                <input type="text" name="nombre" required class="jsEntrada" placeholder="Nombres y Apellidos">
+                <span id="nombreMensaje"></span>
+                <label for="email">Email <div>*</div></label>
+                <input type="email" name="email" required id="email" class="jsEntrada" placeholder="Email">
+                <span id="emailMensaje"></span>
+                <label for="cargo">Cargo <div>*</div></label>
+                <input type="text" name="cargo" required class="jsEntrada" placeholder="Cargo">
+                <span id="cargoMensaje"></span>
+                <label for="horario">Horario en el que te podemos contactar <div>*</div></label>
+                <textarea name="horario" cols="40" rows="5" required class="jsEntrada" placeholder="Horario en el que te podemos contactar"></textarea>
+                <span id="horarioMensaje"></span>
+              </div>
+            </div>  
+    
+            <!--<input type="submit" value="Enviar">-->
+            <button>Enviar</button>
+            
+          </form>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2021 Elizabeth Pérez Alfonso</p>
+    </footer>
+
+  </body>
+
+</html>

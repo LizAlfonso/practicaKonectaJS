@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+      
+  </head>
+
+  <body>
+    
+    <nav class="flexNav">
+        <img src="masterClass.jpg" class="logo">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <form class="formulario2 jsFormulario2" novalidate>
+            <Label for="primerNumero">Primer número</Label>
+            <input type="number" name="primerNumero" id="primerNumero" placeholder="Primer número"> 
+            <span id="mensajeNum1"></span>
+            <label for="segundoNumero">Segundo número</label>
+            <input type="number" name="segundoNumero" id="segundoNumero" placeholder="Segundo número">
+            <span id="mensajeNum2"></span>
+            <label for="operacion">Por favor elija la operación que desea realizar</label>
+            <select name="operacion" id="operacion" required> 
+                <option value="" hidden>Seleccione una operación</option>
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicación</option>
+                <option value="division">División</option>
+            </select>
+            <span id="mensajeSelect"></span>
+            <label for="resultado">Resultado</label>
+            <input type="text" name="resultado" disabled id="resultado"> <br>
+
+            <!--<button type="button" onclick="realizarOperacion();">Realizar la operación</button><br>-->
+            <button>Realizar la operación</button><br>
+            <button type="reset" id="limpiar">Limpiar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>© 2021 Elizabeth Pérez Alfonso</p>
+    </footer>
+
+  </body>
+
+</html>
